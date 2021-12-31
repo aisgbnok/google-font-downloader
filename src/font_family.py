@@ -7,6 +7,17 @@ from src.font import Font
 
 class Family:
     base_url = 'https://fonts.googleapis.com/css2?family='
+    weights = {
+        100: 'Thin',
+        200: 'Extra Light',
+        300: 'Light',
+        400: 'Regular',
+        500: 'Medium',
+        600: 'SemiBold',
+        700: 'Bold',
+        800: 'Extra Bold',
+        900: 'Black'
+    }
 
     def __init__(self, name, find=True, fonts=None):
         if fonts is None:

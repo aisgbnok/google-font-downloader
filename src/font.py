@@ -36,13 +36,7 @@ class Font:
         return name
 
     def get_weight_name(self):
-        if self.weight == 400:
-            return 'Regular'
-        elif self.weight == 500:
-            return 'Medium'
-        elif self.weight == 600:
-            return 'SemiBold'
-        elif self.weight == 700:
-            return 'Bold'
+        if self.weight in self.family.weights:
+            return self.family.weights.get(self.weight)
         else:
             return str(self.weight)
