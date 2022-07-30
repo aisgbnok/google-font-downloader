@@ -47,7 +47,7 @@ class Family:
                 valid_fonts.append(italic_font)
 
         for font in valid_fonts:
-            print(font.valid)
+            print(font.name)
 
     def get_url(self, weight=None, italic=0):
         if weight is None:
